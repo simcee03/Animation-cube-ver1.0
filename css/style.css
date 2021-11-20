@@ -1,0 +1,162 @@
+body{
+    background-image: url("../asets/images/river_43-wallpaper-1440x900.jpg");
+    
+
+margin: 0;
+}
+.bckr_blck{
+background-color: rgba(0, 0, 0, 0.50);
+display: block;
+width: 100vw;
+height: 100vh;
+position: relative;
+}
+.title{
+color: white;
+font-family: 'Outfit', sans-serif;
+font-size: 34;
+padding: 5px;
+transition: color 0.5s, font-size 0.5s ease-in 0s;
+}
+.title:hover{
+color: rgb(167, 223, 217);
+font-size: 45;
+}
+.cubic_container_blur{
+display: block;
+width: 300px;
+height: 300px;
+border: solid 1px rgb(255, 255, 255);
+border-radius: 12px;
+background-color: rgba(0, 0, 0, 0.603);
+filter: blur(0.5px);
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.text_container{
+color: white;
+font-family: 'Outfit', sans-seri;
+font-size: 24;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: color 0.5s, font-size 0.5s ease-in 0s;
+}
+.text_container:hover{
+color: rgb(167, 223, 217);
+font-size: 26;
+}
+.cubeA{
+display: block;
+border-radius: 6px;
+background-image: linear-gradient(rgba(28, 218, 113, 0.363), rgb(13, 116, 59, 0.363));
+width: 150px;
+height: 150px;
+position: absolute;
+top:0%;
+left: 0%;
+transform-origin: top left;
+animation-name: cubeA_rotate;
+animation-duration: 6s;
+animation-timing-function:ease;
+animation-iteration-count: infinite;
+animation-direction:alternate-reverse;
+animation-fill-mode:forwards;
+animation-delay: 1s;
+filter: blur(2px);
+}
+@keyframes cubeA_rotate{
+0%{
+    transform: rotate(0deg);
+}
+100%{
+transform: rotate(270deg)   
+}
+}
+.cubeB{
+display: block;
+border-radius: 6px;
+background-image: linear-gradient(rgb(28, 173, 218, 0.363), rgb(20, 139, 139, 0.363));
+width: 150px;
+height: 150px;
+position: absolute;
+top:0%;
+right:0%;
+transform-origin:  top right;
+animation-name: cubeB_rotate;
+animation-duration: 6s;
+animation-timing-function:ease;
+animation-iteration-count: infinite;
+animation-direction:alternate-reverse;
+animation-fill-mode:f;
+animation-delay: 1s;
+filter: blur(2px);
+}
+@keyframes cubeB_rotate{
+ 0%{
+transform: rotate(360deg);
+}
+ 100%{
+ transform: rotate(90deg);
+}
+}
+
+.cubeC{
+display: block;
+border-radius: 6px;
+background-image: linear-gradient(rgba(218, 28, 28, 0.363), rgba(139, 20, 20, 0.363));
+width: 150px;
+height: 150px;
+position: absolute;
+bottom:0%;
+left: 0%;
+transform-origin: bottom left;
+animation-name: cubeC_rotate;
+animation-duration: 6s;
+animation-timing-function:ease;
+animation-iteration-count: infinite;
+animation-direction:alternate-reverse;
+animation-fill-mode:forwards;
+animation-delay: 1s;
+filter: blur(2px);
+}
+@keyframes cubeC_rotate{
+    0%{
+    transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+    }
+
+.cubeD{
+display: block;
+border-radius: 12px;
+background-image: linear-gradient(rgb(218, 199, 28, 0.363), rgb(182, 125, 19, 0.363));
+width: 150px;
+height: 150px;
+position: absolute;
+bottom:0%;
+right: 0%;
+transform-origin: bottom right;
+animation-name: cubeD_rotate;
+animation-duration: 6s;
+animation-timing-function:ease;
+animation-iteration-count: infinite;
+animation-direction:alternate-reverse;
+animation-fill-mode:forwards;
+animation-delay: 1s;
+filter: blur(2px);
+}
+@keyframes cubeD_rotate{
+    0%{
+    transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(270deg);
+    }
+}
